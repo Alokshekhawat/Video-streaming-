@@ -6,7 +6,7 @@ import eventlet.wsgi
 sio = socketio.Server()#async_mode=async_mode)
 app = Flask(__name__)
 app.wsgi_app = socketio.WSGIApp(sio, app.wsgi_app)
-
+#async_mode=async_mode)
 dict1={}
 i=0
 @app.route('/')
